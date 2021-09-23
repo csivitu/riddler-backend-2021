@@ -8,10 +8,10 @@
     <img src="https://csivit.com/images/favicon.png" alt="Logo" width="80">
   </a>
 
-  <h3 align="center">YOUR_TITLE</h3>
+  <h3 align="center">RIDDLER BACKEND 2021</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
+    Backend of Riddler-2021
     <br />
     <a href="https://github.com/csivitu/Template"><strong>Explore the docs »</strong></a>
     <br />
@@ -29,34 +29,24 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contributors](#contributors-)
-
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`Template`
-
+- [Table of Contents](#table-of-contents)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contributors](#contributors)
 
 ### Built With
 
-* []()
-* []()
-* []()
+* []() Node.js
+* []() Express.js
+* []() MongoDB
+* []() Docker
+ 
 
 
 
@@ -77,22 +67,37 @@ npm install npm@latest -g
  
 1. Clone the repo
 ```sh
-git clone https://github.com/csivitu/Template.git
+git clone https://github.com/csivitu/riddler-backend-2021.git
 ```
 2. Install NPM packages
 ```sh
 npm install
 ```
+3. Add .env file
+```sh
+DB_CONNECTION= <MONGO_URL>
+JWT_SECRET=<JWT_SECRET>
+JWT_EXPIRY=<JWT_EXPIRY>
+```
+4. For docker-compose
+```sh
+docker-compose build up --d
+```
+
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
+This will start a development server that will restart the app when a file change is detected
+```sh
+nodemon app.js
+```
+For production:
+```sh
+npm start
+```
 
 
 <!-- ROADMAP -->
@@ -120,6 +125,18 @@ You are requested to follow the contribution guidelines specified in [CONTRIBUTI
 
 Distributed under the MIT License. See [`LICENSE`](./LICENSE) for more information.
 
+## Contributors
+
+Thanks goes to these wonderful people:
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/vidhik2002"><img src="https://avatars.githubusercontent.com/vidhik2002" width="100px;" alt=""/><br /><sub><b>Vidhi Khaitan</b></sub></a><br /><a href="https://github.com/csivitu/riddler-backend-2021/commits? author=vidhik2002" title="Code">💻</a> <a href="https://github.com/csivitu/  riddler-backend-2021/commits?author=vidhik2002" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/salt57"><img src="https://avatars.githubusercontent.com/salt57" width="100px;" alt=""/><br /><sub><b>Sourish Gupta</b></sub></a><br /><a href="https://github.com/csivitu/riddler-backend-2021/commits? author=salt57" title="Code">💻</a> <a href="https://github.com/csivitu/  riddler-backend-2021/commits?author=salt57" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://www.nimish-jain.com/"><img src="https://avatars.githubusercontent.com/u/63140632?v=4" width="100px;" alt=""/><br /><sub><b>Nimish Jain</b></sub></a><br /><a href="https://github.com/csivitu/riddler-backend-2021/commits?author=nimishjn" title="Code">💻</a> <a href="https://github.com/csivitu/riddler-backend-2021/commits?author=nimishjn" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Shiv10"><img src="https://avatars.githubusercontent.com/u/17690376?v=4" width="100px;" alt=""/><br /><sub><b>Shivansh Sharma</b></sub></a><br /><a href="https://github.com/csivitu/riddler-backend-2021/commits?author=Shiv10" title="Code">💻</a> <a href="https://github.com/csivitu/riddler-backend-2021/commits?author=Shiv10" title="Documentation">📖</a></td>
+  </tr>
+</table>
 
 
 
@@ -129,3 +146,4 @@ Distributed under the MIT License. See [`LICENSE`](./LICENSE) for more informati
 [csivitu-url]: https://csivit.com
 [issues-shield]: https://img.shields.io/github/issues/csivitu/Template.svg?style=flat-square
 [issues-url]: https://github.com/csivitu/Template/issues
+
