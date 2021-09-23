@@ -1,7 +1,7 @@
 const express = require("express");
 
 const router = express.Router();
-const fs = require("fs");
+const obj = require("../models/questions.json")
 const user = require("../models/User");
 const map = require("../models/GameState");
 const question = require("../models/Question");
@@ -42,19 +42,9 @@ router.post("/", validator.body(authUserSchema), async (req, res) => {
       });
     }
 
-    function readfile(fileName) {
-      return new Promise((resolve, reject) => {
-        fs.readFile(fileName, "utf8", (err, data) => {
-          if (err) reject(err);
-          else resolve(data);
-        });
-      });
-    }
-
     let checked = [];
 
     async function recursion(quesId) {
-      const obj = JSON.parse(await readfile("./models/questions.json"));
       const sawal = await question.findOne({ questionId: quesId });
       let q = obj[quesId.toString()].adjacent;
       if (sawal.isPortal) {
