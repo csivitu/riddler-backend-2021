@@ -16,6 +16,7 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-handlebars": "^6.0.6",
     "express-joi-validation": "^5.0.0",
     "express-rate-limit": "^5.2.6",
     "express-session": "^1.17.1",

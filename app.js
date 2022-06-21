@@ -1,11 +1,31 @@
 const express = require('express');
-
+const hbs = require('express-handlebars');
+const path = require('path');
 const app = express();
 const rateLimit = require('express-rate-limit');
 const cors = require('cors');
 
 require('dotenv/config');
 require('./models/dbInit');
+
+const templateFolder = path.join(__dirname, 'templates');
+const mainLayout = path.join(templateFolder, 'main');
+const partialsFolder = path.join(templateFolder, 'partials');
+
+const staticFolder = path.join(__dirname, 'static');
+
+app.set('views', path.join(__dirname, 'templates'));
+app.engine(
+  'html',
+  hbs.engine({
+      extname: '.html',
+      defaultLayout: mainLayout,
+      layoutsDir: templateFolder,
+      partialsDir: partialsFolder,
+  }),
+);
+
+app.set('view engine', 'html');
 
 // var corsOptions = {
 //   origin: 'http://example.com',
@@ -30,6 +50,8 @@ const quesRoute = require('./routes/question');
 const playerdataRoute = require('./routes/playerdata');
 const hintRoute = require('./routes/hint');
 const hintPointsRoute = require('./routes/hintPoints');
+const loginRoute = require('./routes/login');
+const registerRoute = require('./routes/register');
 
 
 const apiLimiter = rateLimit({
@@ -47,8 +69,11 @@ app.use('/ques',authMiddleware , quesRoute);
 app.use('/playerdata', authMiddleware, playerdataRoute);
 app.use('/hint',authMiddleware , hintRoute);
 app.use('/hintpoints',authMiddleware , hintPointsRoute);
+app.use('/login', loginRoute);
+app.use('/register', registerRoute);
 //app.use('/test', testRoute);
 
+app.use('/static', express.static(staticFolder));
 
 app.use((error, req, res, next) => {
   res.status(error.status || 500);

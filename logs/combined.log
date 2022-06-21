@@ -1367,3 +1367,33 @@
 { message: 'validated correctly',
   level: '\u001b[33mwarn\u001b[39m',
   timestamp: '2021-08-21 20:48:20' }
+{
+  username: 'sjsjs',
+  level: '\x1B[31merror\x1B[39m',
+  message: 'values not found in database',
+  timestamp: '2022-06-21 18:14:04'
+}
+{
+  username: 'testsalt57',
+  level: '\x1B[33mwarn\x1B[39m',
+  message: 'user inserted successfully',
+  timestamp: '2022-06-21 18:14:58'
+}
+{
+  username: 'testsalt572',
+  level: '\x1B[33mwarn\x1B[39m',
+  message: 'user inserted successfully',
+  timestamp: '2022-06-21 18:15:41'
+}
+{
+  username: 'testsalt57',
+  level: '\x1B[33mwarn\x1B[39m',
+  message: 'user inserted successfully',
+  timestamp: '2022-06-21 18:23:14'
+}
+{
+  username: 'testsalt57',
+  level: '\x1B[33mwarn\x1B[39m',
+  message: 'validated correctly',
+  timestamp: '2022-06-21 18:28:48'
+}

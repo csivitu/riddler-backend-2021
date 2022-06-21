@@ -30,3 +30,9 @@
   level: '\u001b[31merror\u001b[39m',
   message: 'values not found in database',
   timestamp: '2021-08-21 20:03:30' }
+{
+  username: 'sjsjs',
+  level: '\x1B[31merror\x1B[39m',
+  message: 'values not found in database',
+  timestamp: '2022-06-21 18:14:04'
+}

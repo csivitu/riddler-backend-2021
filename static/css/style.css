@@ -1,0 +1,287 @@
+html {
+    font-size: 0.95vw;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+    width: 100vw;
+    height: 100vh;
+
+    overflow-x: hidden;
+    background-color: #f6f6f6;
+}
+
+.g-recaptcha {
+    display: none;
+}
+
+.backgroundImage {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/background.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-animation: backgroundScroll 150s linear infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation: backgroundScroll 150s linear infinite;
+    animation-fill-mode: forwards;
+    z-index: -1;
+
+    opacity: 0.06;
+
+    position: fixed;
+}
+
+.blue-navbar {
+    background-color: #11355c;
+}
+
+.white-text {
+    color: white;
+}
+
+.main-row {
+    height: 80vh;
+}
+
+.left-column {
+    height: 45vh;
+}
+
+.logo {
+    max-height: 9vh;
+    padding: 1vh;
+}
+
+.title {
+    font-size: 4rem;
+    color: #11355c;
+}
+
+.subtitle {
+    color: grey;
+    font-size: 1.3rem;
+}
+
+.reg-card {
+    border-radius: 1rem;
+    max-width: 80%;
+    max-height: 75vh;
+    overflow-y: auto;
+    box-shadow: 0.3rem 0.5rem 0.5rem rgba(128, 128, 128, 0.335);
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2.125rem;
+    color: #11355c;
+}
+
+.submit-failure {
+    display: none;
+    font-size: 1rem;
+}
+
+.login-form-1 .form-control {
+    border: 0;
+    margin-top: 2%;
+    box-shadow: 0 0 0;
+    color: #555555;
+}
+
+.login-form-1 .input-group {
+    margin-bottom: 0;
+    border-bottom: 2px solid #efefef;
+}
+
+#lg_regno {
+    margin-top: 0 !important;
+}
+
+.error {
+    display: none;
+    color: rgb(255, 89, 89);
+}
+
+.input-group-text {
+    background: none;
+    border: none;
+    transform: translateY(10%);
+}
+
+.fa-exclamation-circle {
+    color: red;
+}
+
+.submit-button-container {
+    width: inherit;
+}
+
+.submit-button {
+    border-radius: 0.75rem;
+    margin: 0 auto;
+    color: white;
+    background-color: #0381ff;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: white;
+}
+
+.footer-img {
+    height: 3vh;
+}
+
+.footer-content {
+    width: 50%;
+}
+
+@media (max-height: 500px) {
+    .left-column {
+        display: none !important;
+    }
+}
+
+@media (max-width: 769px) {
+    html {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 575px) {
+    html {
+        font-size: 2vw;
+    }
+
+    .backgroundImage {
+		background-size: 250%;
+	}
+
+    .blue-navbar {
+        font-size: 1.7rem;
+    }
+
+    .left-column {
+        height: 25vh;
+        margin-top: 1vh;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 3.2rem;
+    }
+
+    .subtitle {
+        font-size: 1.8rem;
+    }
+
+    .logo {
+        max-width: 36vw;
+        margin-bottom: 1.5vh;
+    }
+
+    .reg-card {
+        max-width: 100%;
+        margin-top: 3vh;
+        margin-left: 0 !important;
+        padding: 1vh 0 1vh 0 !important;
+    }
+
+    .reg-card .card-body #login-form .input-group ::placeholder,
+    .reg-card .card-body #login-form .input-group,
+    .reg-card .card-body #login-form .form-check {
+        font-size: 1.8rem;
+        margin-bottom: 2vh;
+    }
+
+    .reg-card .card-body #login-form .vit-student {
+        font-size: 1.8rem;
+        margin-bottom: 2vh;
+    }
+
+    .reg-card .card-body #login-form #lg-email {
+        padding-top: 1vh;
+    }
+
+    .submit-failure {
+        font-size: 1.8rem;
+    }
+
+    .popover {
+        font-size: 1.8rem;
+    }
+
+    .fa-exclamation-circle {
+        font-size: 2rem;
+    }
+
+    .form-message {
+        font-size: 1.8rem;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 1.8rem;
+    }
+
+    input[type="radio"] {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .submit-button {
+        margin-top: 2vh !important;
+        font-size: 2rem;
+    }
+
+    .footer-bottom {
+        display: block !important;
+    }
+
+    .footer-content {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 3800px) {
+    .logo {
+        height: 9vh;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        height: 0.7rem;
+        width: 0.7rem;
+    }
+
+    .fa-exclamation-circle {
+        font-size: 1.2rem;
+    }
+}
+
+
+@keyframes backgroundScroll {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -1985px 0px;
+    }
+}
+
+
+@-webkit-keyframes backgroundScroll {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -1985px 0px;
+    }
+}
