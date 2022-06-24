@@ -85,3 +85,50 @@
   level: '\x1B[31merror\x1B[39m',
   timestamp: '2022-06-24 18:33:59'
 }
+{
+  message: 'undefined error occured',
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2022-06-25 00:32:35'
+}
+{
+  message: 'undefined error occured',
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2022-06-25 00:32:49'
+}
+{
+  message: 'undefined error occured',
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2022-06-25 00:33:44'
+}
+{
+  message: 'undefined error occured',
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2022-06-25 00:34:04'
+}
+{
+  message: 'undefined error occured',
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2022-06-25 00:35:21'
+}
+{
+  message: 'undefined error occured',
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2022-06-25 00:37:44'
+}
+{
+  message: 'undefined error occured',
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2022-06-25 00:41:50'
+}
+{
+  username: 'sanjaysanjay123',
+  level: '\x1B[31merror\x1B[39m',
+  message: 'values not found in database',
+  timestamp: '2022-06-25 00:47:59'
+}
+{
+  username: 'sanjay123',
+  level: '\x1B[31merror\x1B[39m',
+  message: 'values not found in database',
+  timestamp: '2022-06-25 00:48:15'
+}
