@@ -25,15 +25,27 @@ router.post("/", async (req, res) => {
   const playerInfo = {
     username: username,
   };
+
+  if (!username || !password){
+    logger.error("No username or password");
+    return res.render('login', {
+      data: 'Please enter both username and password'
+    })
+  }
+
   const userExists = await user.exists({ username: username });
   if (!userExists) {
     logger.error(error_codes.E3, playerInfo);
-    return res.json({ code: "E3" });
+    return res.render('login', {
+      data: 'User doesn\'t exist'
+    })
   }
   const userToEnter = await user.findOne({ username: username });
   if (userToEnter.password !== password) {
     logger.error(error_codes.E3, playerInfo);
-    return res.json({ code: "E3" });
+    return res.render('login', {
+      data: 'Incorrect Password'
+    })
   }
   logger.warn(success_codes.S5, playerInfo);
 

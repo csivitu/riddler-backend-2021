@@ -22,13 +22,23 @@ router.get("/", async (req, res) => {
 
 router.post("/", async (req, res) => {
   const { username, password } = req.body;
+
+  if (!username || !password){
+    logger.error("No username or password");
+    return res.render('register', {
+      data: 'Please enter both username and password'
+    })
+  }
+
   const playerInfo = {
     username: username,
   };
   const userExists = await user.exists({ username: username });
   if (userExists) {
     logger.error(error_codes.E3, playerInfo);
-    return res.json({ code: "E3" });
+    return res.render('register', {
+      data: 'Username already exists'
+    })
   }
   const userToEnter = new user({
     username: username,

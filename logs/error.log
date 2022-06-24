@@ -36,3 +36,52 @@
   message: 'values not found in database',
   timestamp: '2022-06-21 18:14:04'
 }
+{
+  username: '20BCE0528',
+  level: '\x1B[31merror\x1B[39m',
+  message: 'values not found in database',
+  timestamp: '2022-06-24 18:04:52'
+}
+{
+  username: 'AddiTest',
+  level: '\x1B[31merror\x1B[39m',
+  message: 'values not found in database',
+  timestamp: '2022-06-24 18:12:46'
+}
+{
+  username: 'AddiTest',
+  level: '\x1B[31merror\x1B[39m',
+  message: 'values not found in database',
+  timestamp: '2022-06-24 18:15:20'
+}
+{
+  message: 'No username or password',
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2022-06-24 18:17:28'
+}
+{
+  message: 'No username or password',
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2022-06-24 18:18:06'
+}
+{
+  message: 'No username or password',
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2022-06-24 18:30:27'
+}
+{
+  username: 'AddiTest',
+  level: '\x1B[31merror\x1B[39m',
+  message: 'values not found in database',
+  timestamp: '2022-06-24 18:33:50'
+}
+{
+  message: 'No username or password',
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2022-06-24 18:33:54'
+}
+{
+  message: 'No username or password',
+  level: '\x1B[31merror\x1B[39m',
+  timestamp: '2022-06-24 18:33:59'
+}
