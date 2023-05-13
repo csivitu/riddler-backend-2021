@@ -64,7 +64,7 @@ app.use('/score', scoreRoute);
 app.use("/submit", authMiddleware, apiLimiter, submitRoute);
 app.use('/map', authMiddleware, mapRoute);
 app.use('/penalty',authMiddleware, penaltyRoute);
-app.use('/insert' , insertRoute);
+app.use('/insert', authMiddleware, insertRoute);
 app.use('/ques',authMiddleware , quesRoute);
 app.use('/playerdata', authMiddleware, playerdataRoute);
 app.use('/hint',authMiddleware , hintRoute);
