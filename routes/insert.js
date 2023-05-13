@@ -59,7 +59,8 @@ router.post("/user", async (req, res) => {
       code: "S5",
     });
   } catch (e) {
-    logger.error(error_codes.E0, playerInfo);
+    // logger.error(error_codes.E0, playerInfo);
+    console.log(e);
     return res.status(500).json({
       code: "E0",
     });
