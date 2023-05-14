@@ -67,6 +67,7 @@ app.use('/penalty',authMiddleware, penaltyRoute);
 app.use('/insert', authMiddleware, insertRoute);
 app.use('/ques',authMiddleware , quesRoute);
 app.use('/playerdata', authMiddleware, playerdataRoute);
+app.use('/user', authMiddleware, playerdataRoute);
 app.use('/hint',authMiddleware , hintRoute);
 app.use('/hintpoints',authMiddleware , hintPointsRoute);
 app.use('/login', loginRoute);
