@@ -81,7 +81,7 @@ JWT_EXPIRY=<JWT_EXPIRY>
 ```
 4. For docker-compose
 ```sh
-docker-compose build up --d
+docker-compose up -d
 ```
 
 
